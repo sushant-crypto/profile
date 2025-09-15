@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushant Kumar | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffbd39;
+    }
+    #typing {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #ffffff;
+      height: 1.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #1a1a1a;
+      padding: 1rem;
+    }
+    nav a {
+      color: #ffbd39;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,189,57,0.2);
+    }
+    .skills span {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .bar {
+      background: #333;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+    .bar-fill {
+      height: 10px;
+      background: #ffbd39;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+    .counter {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .counter div {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sushant Kumar</h1>
+    <div id="typing"></div>
+    <p>BCA Student • Web Developer • Music Curator</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="overview" class="card">
+    <h2>Animated Overview</h2>
+    <p>Welcome to my digital space. I’m Sushant—a creator who blends logic and emotion, code and culture. Whether I’m building modular websites, curating poetic Hindi playlists, or solving technical puzzles, I bring clarity, resonance, and purpose to everything I touch.</p>
+    <p>I thrive on storytelling through design, and I believe every line of code can carry emotion. This site is a reflection of that belief.</p>
+  </section>
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>I’m a student at Galgotias University, pursuing a Bachelor’s in Computer Applications. My interests span across:</p>
+    <ul>
+      <li>💻 Web development with a focus on modular, minimal design</li>
+      <li>🎧 Curating emotionally resonant Hindi playlists for heartbreak, healing, and reflection</li>
+      <li>📊 Data analysis and visualization using Python and Excel</li>
+      <li>🌐 Exploring cloud technologies and SEO for scalable impact</li>
+    </ul>
+    <p>I’m driven by clarity, creativity, and the desire to build experiences that feel personal and purposeful.</p>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML / CSS / JS</span>
+      <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+
+      <span>Python & PySpark</span>
+      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+
+      <span>C / C++</span>
+      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+
+      <span>Excel & Data Analysis</span>
+      <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+
+      <span>Git / JIRA / SEO</span>
+      <div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+    </div>
+  </section>
+
+  <section id="resume" class="card">
+    <h2>Resume</h2>
+    <h3>Education</h3>
+    <p><strong>School:</strong> R.B.T. Vidyalaya – First Class Distinction</p>
+    <p><strong>College:</strong> Galgotias University – BCA (2024–2027)</p>
+
+    <h3>Experience</h3>
+    <p><strong>Tech Club Leader:</strong> Organized coding competitions and workshops</p>
+    <p><strong>Portfolio Projects:</strong> Built anime-themed coding site with music modules</p>
+
+    <div class="counter">
+      <div><span id="projects">0</span><br>Projects</div>
+      <div><span id="achievements">0</span><br>Achievements</div>
+      <div><span id="studies">0</span><br>Study Hours</div>
+      <div><span id="coffee">0</span><br>Cups of Coffee</div>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> sk8175945@gmail.com</p>
+    <p><strong>Phone:</strong> +91 0101 0101 101</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sushant-kumar-9b4549321/" target="_blank">Profile</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/sushant-crypto" target="_blank">Projects</a></p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Sushant Kumar. Built with clarity and emotion.
+  </footer>
+
+  <script>
+    // Typing animation
+    const typing = document.getElementById('typing');
+    const roles = ['Engineer', 'Web Developer', 'Playlist Curator', 'Creative Coder'];
+    let index = 0, char = 0;
+
+    function type() {
+      if (char < roles[index].length) {
+        typing.textContent += roles[index][char];
+        char++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(() => {
+          typing.textContent = '';
+          index = (index + 1) % roles.length;
+          char = 0;
+          type();
+        }, 1200);
+      }
+    }
+    type();
+
+    // Counter animation
+    function animateCounter(id, target) {
+      let count = 0;
+      const speed = target / 100;
+      const el = document.getElementById(id);
+      const interval = setInterval(() => {
+        count += speed;
+        if (count >= target) {
+          el.textContent = target;
+          clearInterval(interval);
+        } else {
+          el.textContent = Math.ceil(count);
+        }
+      }, 30);
+    }
+
+    animateCounter('projects', 35);
+    animateCounter('achievements', 20);
+    animateCounter('studies', 1200);
+    animateCounter('coffee', 600);
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html
